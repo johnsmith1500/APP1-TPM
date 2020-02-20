@@ -6,6 +6,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
   <script src="lib/jquery-3.4.1.min.js"></script>
+  <script src="components/contar.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="lib/css/bootstrap.min.css">
@@ -13,17 +14,59 @@
 
 </head>
 <body>
+
 <div class="container">
+  <div class="header">
+  <h2>Calculadora</h2>
+  </div>
   <div class="row">
     <div class="col-sm">
       <div class="form-group">
-        <label>Valor 1</label>
-        <input type="number" class="form-control">
+        <label for="valor1">Valor 1</label>
+        <input type="number" class="form-control" id="valor2">
       </div>
     </div>
   </div>
+<div class="row">
+		<div class="col-sm">
+			<div class="form-group">
+				<label for="valor2">Valor 2: </label>
+				<input type="number" class="form-control" id="valor2">
+		</div>
+	</div>
 </div>
+<br>
+</div>
+<div class="row">
+	<div class="col-3">
+		<button class="btn btn-primary btn-block" id="somar">+</button>
+</div>
+	<div class="col-3">
+		<button class="btn btn-primary btn-block" id="subtrair">-</button>
+</div>
+	<div class="col-3">
+		<button class="btn btn-primary btn-block" id="multiplicar">x</button>
+</div>
+	<div class="col-3">
+		<button class="btn btn-primary btn-block" id="dividir">/</button>
+	</div>
+</div>
+<br>
+<div class="row">
+    <div class="col-sm">
+      <div class="form-group">
+        <label for="resultado">Resultado:</label>
+        <input type="number" class="form-control" id="result" readonly>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <div class="form-group">
+        <button class="btn btn-success btn-block" id="limpar">Limpar</button>
+      </div>
+    </div>
+  </div>
 </body> 
-
 </body>
 </html>
